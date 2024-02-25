@@ -3,10 +3,9 @@
 # Replaces hostname with name in <robotname>.
 # Get old and new hostname
 hn=`hostname`
-# echo "renaming" $hn "again" >/home/local/aaa.txt
 # read new name in the file robotname
-f="/home/local/svn/log/robotname"
-cd /home/local/svn/log
+f="/home/local/log/robotname"
+cd /home/local/log
 date >> rename_info.txt
 if [ -f $f ];
 then # file exist
